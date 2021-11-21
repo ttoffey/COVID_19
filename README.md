@@ -112,38 +112,6 @@ Recall:
 # Code to calculate nearest hopsitals and resulting map
 User Zip Code: 85001
 
-p=pi/180
-results=[]
-zips = []
-lats = []
-longs = []
-hospitals = []
-addresses= []
-cities = []
-states = []
-for i, row in hosp_df.iterrows():
-    lat1=row['LAT']
-    long1=row['LNG']
-    
-    hospital=hosp_df['hospital_name'][i]
-    #print(hospital)
-    
-    address=hosp_df['address'][i]
-    city=hosp_df['city'][i]
-    state=hosp_df['state'][i]
-    zip_code=row['zip']
-    a = 0.5 - cos((lat2-lat1)*p)/2 + cos(lat1*p) * cos(lat2*p) * (1-cos((long2-long1)*p))/2
-    result=12742*asin(sqrt(a))
-    results.append(result)
-    zips.append(zip_code)
-    lats.append(lat1)
-    longs.append(long1)
-    hospitals.append(hospital)
-    #print(hospitals)
-    addresses.append(address)
-    cities.append(city)
-    states.append(state)
-    #print(f"Zip Code: {zip_code}, Result: {result}")
 ![image](https://user-images.githubusercontent.com/67808647/142769052-c59ae59d-ff97-4e37-b667-e3b8eaa89e0f.png)
 
 
