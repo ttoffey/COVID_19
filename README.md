@@ -110,8 +110,10 @@ Recall:
 - Results are displyed on a map.
 
 # Code to calculate nearest hopsitals and resulting map
+ ### User zip code = 85001
+ 
+![image](https://user-images.githubusercontent.com/67808647/142866675-336cded9-de89-49e5-b4e5-03f5fd37d5f6.png)
 
-![image](https://user-images.githubusercontent.com/67808647/142769052-c59ae59d-ff97-4e37-b667-e3b8eaa89e0f.png)
 
 
 - 
